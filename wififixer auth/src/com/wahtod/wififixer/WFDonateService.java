@@ -34,12 +34,7 @@ public class WFDonateService extends Service {
 	
 	@Override
     public void onCreate() {
-        // Start up the thread running the service.  Note that we create a
-        // separate thread because the service normally runs in the process's
-        // main thread, which we don't want to block.
-		//Also, make sure we don't have a thread running. 
-        //if (LOGGING)
-        	//Log.i(APP_NAME,"OnCreate");
+        super.onCreate();
     }
 	@Override
 	public void onStart(Intent intent, int startId) {
@@ -52,17 +47,12 @@ public class WFDonateService extends Service {
 	}
 	@Override
     public void onDestroy() {
-        // Start up the thread running the service.  Note that we create a
-        // separate thread because the service normally runs in the process's
-        // main thread, which we don't want to block.
-        //Thread.destroy
-		//WFDonateService.this.mTask.notify()
+       super.onDestroy();
     }
 	
 	@Override
     public IBinder onBind(Intent intent) {
-    	//if (LOGGING)
-			//Log.i(APP_NAME,"OnBind:Intent:"+intent.toString());
+    	
 		return null;
     };
 	
