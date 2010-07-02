@@ -14,9 +14,8 @@ Copyright [2010] [David Van de Ven]
    See the License for the specific language governing permissions and
    limitations under the License.
 -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.wahtod.wififixer" android:versionName="1.0.2" android:versionCode="103">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.wahtod.wififixer" android:versionName="1.0.3" android:versionCode="104">
 	<uses-sdk android:minSdkVersion="3" 
-	android:maxSdkVersion="7"
 	android:targetSdkVersion="6" /> 
 <application android:icon="@drawable/icon" android:label="@string/app_name" android:description="@string/app_desc">
  <service  android:name=".WFDonateService" android:persistent="false" android:exported="true" class="WFDonateService">
