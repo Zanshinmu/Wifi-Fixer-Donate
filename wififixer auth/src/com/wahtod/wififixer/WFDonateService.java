@@ -27,7 +27,7 @@ public class WFDonateService extends Service {
 	
 	
 	private static final String APP_NAME = "WFDonateService";
-	private static final String AUTHEXTRA ="DICKS.ETC";
+	private static final String AUTHEXTRA ="IRRADIATED";
 	//Enable logging
 	final boolean LOGGING = false;
 	// *****************************
