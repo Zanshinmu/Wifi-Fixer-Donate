@@ -64,9 +64,9 @@ void HandleStart(Intent intent){
 	if (LOGGING)
 		Log.i(APP_NAME, "Intent:"+sAction);
 	if (sAction.contains("com.wahtod.wififixer.WFDonateService")){
-		Intent sendIntent = new Intent("org.wahtod.wififixer.WifiFixerService.AUTH");
+		Intent sendIntent = new Intent("org.wahtod.wififixer.AUTH");
 		sendIntent.putExtra(AUTHEXTRA, "31415927");
-		startService(sendIntent);
+		sendBroadcast(sendIntent);
 		if (LOGGING)
 			Log.i(APP_NAME, "Sending Auth");
 	}
